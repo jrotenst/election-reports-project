@@ -26,8 +26,8 @@ abstract class ElectionReporter implements Observer {
 
     public String reportElection() {
         DisplayLegalMessage();
-        return PVReportStrategy.getReport()
-                + ECReportStrategy.getReport();
+        return PVReportStrategy.getReport(electionResults)
+                + ECReportStrategy.getReport(electionResults);
     }
 
     public void DisplayLegalMessage() {

@@ -1,11 +1,13 @@
 package com.jrutz;
 
+import java.util.ArrayList;
+
+//  republican favoring strategy that reports 5% fewer of the democrat votes
+
 public class RepPopVoteStrategy implements IElectionReportingStrategy {
 
-    //  republican favoring strategy that reports 5% fewer of the democrat votes
-
     @Override
-    public String getReport() {
+    public String getReport(ArrayList<State> electionResults) {
         return null;
     }
 }

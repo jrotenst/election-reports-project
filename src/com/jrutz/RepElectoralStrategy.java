@@ -1,14 +1,14 @@
 package com.jrutz;
 
+import java.util.ArrayList;
+
+//   republican favoring strategy that assumes one of the
+//  states will go republican regardless of the polling data
+
 public class RepElectoralStrategy implements IElectionReportingStrategy {
 
-    /*
-        states will go republican regardless of the polling data
-        republican favoring strategy that assumes one of the
-     */
-
     @Override
-    public String getReport() {
+    public String getReport(ArrayList<State> electionResults) {
         return null;
     }
 }
