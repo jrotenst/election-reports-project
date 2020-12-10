@@ -1,6 +1,6 @@
-package com.company;
+package com.jrutz;
 
-public class DemPopVoteStrategy implements IPopularVoteReportingStrategy {
+public class DemPopVoteStrategy implements IElectionReportingStrategy {
 
     // a democrat favoring strategy that simply ignores the state with the most republican votes
 

@@ -1,4 +1,4 @@
-package com.company;
+package com.jrutz;
 
 import java.util.Observable;
 import java.util.Observer;

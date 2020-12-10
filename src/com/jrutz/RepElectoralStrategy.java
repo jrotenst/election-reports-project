@@ -1,6 +1,6 @@
-package com.company;
+package com.jrutz;
 
-public class RepElectoralStrategy implements IElectoralCollegeReportingStrategy {
+public class RepElectoralStrategy implements IElectionReportingStrategy {
 
     /*
         states will go republican regardless of the polling data

@@ -1,4 +1,4 @@
-package com.company;
+package com.jrutz;
 
 public class State {
 

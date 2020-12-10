@@ -1,7 +1,4 @@
-package com.company;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
+package com.jrutz;
 
 public class Main {
 
