@@ -6,8 +6,20 @@ import java.util.ArrayList;
 
 public class HonestPopVoteStrategy implements IElectionReportingStrategy {
 
+    private ArrayList<State> results;
+    private int sumRepVotes;
+    private int sumDemVotes;
+
     @Override
-    public String getReport(ArrayList<State> electionResults) {
-        return null;
+    public void setResults(ArrayList<State> results) {
+        this.results = results;
+    }
+
+    public String report() {
+        for (State s : results) {
+            sumRepVotes += s.getRepVotes();
+            sumDemVotes += s.getDemVotes();
+        }
+        return " ".repeat(15) + sumRepVotes + "\t" + sumDemVotes + "\n";
     }
 }

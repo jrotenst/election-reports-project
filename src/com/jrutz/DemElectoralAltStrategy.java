@@ -8,8 +8,34 @@ import java.util.ArrayList;
 
 public class DemElectoralAltStrategy implements IElectionReportingStrategy {
 
+    private ArrayList<State> results;
+    private int repElectorals;
+    private int demElectorals;
+
     @Override
-    public String getReport(ArrayList<State> electionResults) {
-        return null;
+    public void setResults(ArrayList<State> results) {
+        this.results = results;
+    }
+
+    @Override
+    public String report() {
+        for (State s : results) {
+            awardElectorals(s);
+        }
+        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+    }
+
+    private void awardElectorals(State s) {
+        if (isRepLeadLessThan2Percent(s)) {
+            demElectorals += s.getElectoralVotes();
+        }
+        else {
+            repElectorals += s.getElectoralVotes();
+        }
+    }
+
+    private boolean isRepLeadLessThan2Percent(State s) {
+        double twoPercent = (s.getDemVotes() + s.getRepVotes()) * 0.2;
+        return s.getRepVotes() - s.getDemVotes() < twoPercent;
     }
 }

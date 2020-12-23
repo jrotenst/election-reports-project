@@ -21,13 +21,18 @@ abstract class ElectionReporter implements Observer {
         if (observable instanceof ElectionData) {
             ElectionData electionData = (ElectionData) observable;
             electionResults = electionData.getStateResults();
+            PVReportStrategy.setResults(electionResults);
+            ECReportStrategy.setResults(electionResults);
         }
     }
 
     public String reportElection() {
         DisplayLegalMessage();
-        return PVReportStrategy.getReport(electionResults)
-                + ECReportStrategy.getReport(electionResults);
+        return  "\n********** LATEST ELECTION RESULTS **********\n"
+                +"\nELECTORAL COLLEGE: \nRepublican\tDemocrat:\n"
+                + ECReportStrategy.report()
+                + "\nPOPULAR VOTE: \nRepublican\tDemocrat:\n"
+                + PVReportStrategy.report();
     }
 
     public void DisplayLegalMessage() {

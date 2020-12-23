@@ -11,9 +11,63 @@ import java.util.ArrayList;
 
 public class RepElectoralAltStrategy implements IElectionReportingStrategy {
 
+    private ArrayList<State> results;
+    private State smallestDemLead = null;
+    private int smallestDemLeadMargin = 0;
+    private int repElectorals;
+    private int demElectorals;
 
     @Override
-    public String getReport(ArrayList<State> electionResults) {
-        return null;
+    public void setResults(ArrayList<State> results) {
+        this.results = results;
     }
+
+    public String report() {
+        for (State s : results) {
+            if (repLeads(s) < 0) {
+                if (smallestDemLead == null) {
+                    smallestDemLead = s;
+                    smallestDemLeadMargin = s.getDemVotes() - s.getRepVotes();
+                }
+                else {
+                    if (s.getDemVotes() - s.getRepVotes() < smallestDemLeadMargin) {
+                        awardElectoralsToParty(s, 'D');        // award dems with electorals for state being replaced
+                        smallestDemLead = s;
+                        smallestDemLeadMargin = s.getDemVotes() - s.getRepVotes();
+                    }
+                }
+            }
+            else if (repLeads(s) > 0){
+                awardElectoralsToParty(s, 'R');      // if reps lead award them the electorals
+            }
+        }
+        splitSmallestState();
+        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+    }
+
+    private void splitSmallestState() {
+        demElectorals += smallestDemLead.getElectoralVotes() / 2;
+        repElectorals += (smallestDemLead.getElectoralVotes() / 2) + (smallestDemLead.getElectoralVotes() % 2);
+    }
+
+    private void awardElectoralsToParty(State s, char p) {
+        if (p == 'R') {
+            repElectorals += s.getElectoralVotes();
+        }
+        else if (p == 'D') {
+            demElectorals += s.getElectoralVotes();
+        }
+    }
+
+    private int repLeads(State s) {
+        if (s.getRepVotes() > s.getDemVotes()) {
+            return 1;
+        }
+        if (s.getRepVotes() < s.getDemVotes()) {
+            return -1;
+        }
+        return 0;
+    }
+
+
 }

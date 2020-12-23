@@ -1,7 +1,9 @@
 package com.jrutz;
 
 import java.util.ArrayList;
+import java.util.SplittableRandom;
 
 public interface IElectionReportingStrategy {
-    String getReport(ArrayList<State> electionResults);
+    void setResults(ArrayList<State> results);
+    String report();
 }

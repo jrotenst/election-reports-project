@@ -21,8 +21,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d8b54247-6c8c-4ccb-9315-9c09187805f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/ElectionData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/ElectionReporter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemElectoralAltStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemElectoralAltStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemElectoralStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemPopVoteStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jrutz/ElectionReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/ElectionReporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestElectoralStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestPopVoteStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/IElectionReportingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/IElectionReportingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jrutz/MAGANews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/MAGANews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepElectoralStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepPopVoteStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,34 +115,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607545186120" />
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1607627205880">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1607638252646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607544349425" />
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607627205880" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607638252646" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1608758993983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608758993983" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607621370257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607621370257" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607579695732">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607995769315">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607579695732" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607579695732">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607995769315" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607995769314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607579695732" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607579695732">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607995769314" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607995769313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607579695732" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607579695732">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607995769313" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607995769314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607579695732" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607995769314" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1607629411532">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607629411532" />
   </component>
 </project>
