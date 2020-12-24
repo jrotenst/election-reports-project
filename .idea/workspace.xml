@@ -20,23 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b54247-6c8c-4ccb-9315-9c09187805f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/jrutz/EqualityNewsNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jrutz/MilktoastConservativeLive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/ElectionData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/ElectionReporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Election Reports/com/company/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemElectoralAltStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemElectoralAltStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemElectoralStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemPopVoteStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/ElectionReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/ElectionReporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestElectoralStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestPopVoteStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/IElectionReportingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/IElectionReportingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jrutz/MAGANews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/MAGANews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepElectoralStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepPopVoteStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
