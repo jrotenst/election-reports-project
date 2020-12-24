@@ -25,7 +25,6 @@ public class Main {
         electionReporters.add(new HonestAbeNewsNetwork(electionData));
 
         electionData.resultsChanged();
-
         displayReports();
 
         // move 50k votes from dem to rep in each state
@@ -34,9 +33,25 @@ public class Main {
             s.setDemVotes(s.getDemVotes() - 50000);
         }
 
-        //electionData.setResults(latestStateResults);
         electionData.resultsChanged();
+        displayReports();
 
+        // move 100k votes from rep to dem in each state
+        for (State s : latestStateResults) {
+            s.setRepVotes(s.getRepVotes() - 100000);
+            s.setDemVotes(s.getDemVotes() + 100000);
+        }
+
+        electionData.resultsChanged();
+        displayReports();
+
+        // move 1m votes from dem to rep in each state
+        for (State s : latestStateResults) {
+            s.setRepVotes(s.getRepVotes() + 1100000);
+            s.setDemVotes(s.getDemVotes() - 1100000);
+        }
+
+        electionData.resultsChanged();
         displayReports();
     }
 
