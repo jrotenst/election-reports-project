@@ -14,6 +14,7 @@ public class HonestElectoralStrategy implements IElectionReportingStrategy {
     }
 
     public String report() {
+        resetVariables();
         for (State s : results) {
             if (repLeads(s) > 0) {
                 repElectorals += s.getElectoralVotes();
@@ -25,7 +26,7 @@ public class HonestElectoralStrategy implements IElectionReportingStrategy {
                 continue;
             }
         }
-        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+        return "Republican: " + repElectorals + "\t\t" + "Democrat: "+ demElectorals;
     }
 
     private int repLeads(State s) {
@@ -36,5 +37,10 @@ public class HonestElectoralStrategy implements IElectionReportingStrategy {
             return -1;
         }
         return 0;
+    }
+
+    public void resetVariables() {
+        repElectorals = 0;
+        demElectorals = 0;
     }
 }

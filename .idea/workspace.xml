@@ -20,10 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b54247-6c8c-4ccb-9315-9c09187805f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jrutz/EqualityNewsNetwork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jrutz/MilktoastConservativeLive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/AlmostTrueNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/AlmostTrueNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemElectoralAltStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemElectoralAltStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemElectoralStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/DemPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/DemPopVoteStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/ElectionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/ElectionData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/ElectionReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/ElectionReporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/EqualityNewsNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/EqualityNewsNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestAbeNewsNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestAbeNewsNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestElectoralStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/HonestPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/HonestPopVoteStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/IElectionReportingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/IElectionReportingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jrutz/MAGANews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/MAGANews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/MilktoastConservativeLive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/MilktoastConservativeLive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepElectoralStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepElectoralStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/RepPopVoteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/RepPopVoteStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jrutz/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jrutz/State.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,33 +130,60 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607621370257" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607995769315">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1608789170201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170201" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607995769315" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607995769314">
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1608789170201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170201" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607995769314" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607995769313">
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1608789170201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170201" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607995769313" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607995769314">
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1608789170201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1607556105939" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607985446117" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170201" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607995769314" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1608789170545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170545" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1608789170545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170545" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1608789170545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170545" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1608789170545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1608789170545" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1607629411532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1607629411532" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/jrutz/RepElectoralAltStrategy.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

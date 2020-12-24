@@ -2,19 +2,17 @@ package com.jrutz;
 
 public class State {
 
-    private String name;
     private String abrv;
     private int demVotes;
     private int repVotes;
     private int electoralVotes;
 
-    public State(String name, String abrv, int electoralVotes) {
-        this.name = name;
+    public State(String abrv, int demVotes, int repVotes, int electoralVotes) {
         this.abrv = abrv;
+        this.demVotes = demVotes;
+        this.repVotes = repVotes;
         this.electoralVotes = electoralVotes;
     }
-
-    public String getName() { return name; }
 
     public String getAbrv() { return abrv; }
 

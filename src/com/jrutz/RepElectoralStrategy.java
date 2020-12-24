@@ -18,6 +18,7 @@ public class RepElectoralStrategy implements IElectionReportingStrategy {
     }
 
     public String report() {
+        resetVariables();
         for (State s : results) {
             if (s.getAbrv() == "TX") {
                 repElectorals += s.getElectoralVotes();
@@ -34,7 +35,7 @@ public class RepElectoralStrategy implements IElectionReportingStrategy {
                 }
             }
         }
-        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+        return "Republican: " + repElectorals + "\t\t" + "Democrat: "+ demElectorals;
     }
 
     private int repLeads(State s) {
@@ -45,5 +46,10 @@ public class RepElectoralStrategy implements IElectionReportingStrategy {
             return -1;
         }
         return 0;
+    }
+
+    public void resetVariables() {
+        repElectorals = 0;
+        demElectorals = 0;
     }
 }

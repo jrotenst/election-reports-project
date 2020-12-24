@@ -23,6 +23,8 @@ public class RepElectoralAltStrategy implements IElectionReportingStrategy {
     }
 
     public String report() {
+        resetVariables();
+
         for (State s : results) {
             if (repLeads(s) < 0) {
                 if (smallestDemLead == null) {
@@ -31,9 +33,12 @@ public class RepElectoralAltStrategy implements IElectionReportingStrategy {
                 }
                 else {
                     if (s.getDemVotes() - s.getRepVotes() < smallestDemLeadMargin) {
-                        awardElectoralsToParty(s, 'D');        // award dems with electorals for state being replaced
+                        awardElectoralsToParty(smallestDemLead, 'D');        // award dems with electorals for state being replaced
                         smallestDemLead = s;
                         smallestDemLeadMargin = s.getDemVotes() - s.getRepVotes();
+                    }
+                    else {
+                        awardElectoralsToParty(s, 'D');
                     }
                 }
             }
@@ -42,7 +47,7 @@ public class RepElectoralAltStrategy implements IElectionReportingStrategy {
             }
         }
         splitSmallestState();
-        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+        return "Republican: " + repElectorals + "\t\t" + "Democrat: "+ demElectorals;
     }
 
     private void splitSmallestState() {
@@ -69,5 +74,11 @@ public class RepElectoralAltStrategy implements IElectionReportingStrategy {
         return 0;
     }
 
+    public void resetVariables() {
+        repElectorals = 0;
+        demElectorals = 0;
+        smallestDemLeadMargin = 0;
+        smallestDemLead = null;
+    }
 
 }

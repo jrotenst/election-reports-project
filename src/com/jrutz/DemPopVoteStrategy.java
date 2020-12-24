@@ -17,6 +17,7 @@ public class DemPopVoteStrategy implements IElectionReportingStrategy {
 
     @Override
     public String report() {
+        resetVariables();
         int repMax = results.get(0).getRepVotes();
         for (State s : results) {
             sumRepVotes += s.getRepVotes();
@@ -26,6 +27,11 @@ public class DemPopVoteStrategy implements IElectionReportingStrategy {
             }
         }
         sumRepVotes -= repMax;  // subtract the votes from the state with max
-        return " ".repeat(15) + sumRepVotes + "\t" + sumDemVotes + "\n";
+        return "Republican: " + sumRepVotes + "\t\t" + "Democrat: "+ sumDemVotes;
+    }
+
+    public void resetVariables() {
+        sumRepVotes = 0;
+        sumDemVotes = 0;
     }
 }

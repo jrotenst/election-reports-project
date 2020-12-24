@@ -19,10 +19,11 @@ public class DemElectoralAltStrategy implements IElectionReportingStrategy {
 
     @Override
     public String report() {
+        resetVariables();
         for (State s : results) {
             awardElectorals(s);
         }
-        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+        return "Republican: " + repElectorals + "\t\t" + "Democrat: "+ demElectorals;
     }
 
     private void awardElectorals(State s) {
@@ -37,5 +38,10 @@ public class DemElectoralAltStrategy implements IElectionReportingStrategy {
     private boolean isRepLeadLessThan2Percent(State s) {
         double twoPercent = (s.getDemVotes() + s.getRepVotes()) * 0.2;
         return s.getRepVotes() - s.getDemVotes() < twoPercent;
+    }
+
+    public void resetVariables() {
+        repElectorals = 0;
+        demElectorals = 0;
     }
 }

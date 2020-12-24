@@ -8,6 +8,7 @@ import java.util.Observer;
 
 abstract class ElectionReporter implements Observer {
 
+    String name;
     IElectionReportingStrategy PVReportStrategy;
     IElectionReportingStrategy ECReportStrategy;
     ArrayList<State> electionResults;
@@ -27,16 +28,16 @@ abstract class ElectionReporter implements Observer {
     }
 
     public String reportElection() {
-        DisplayLegalMessage();
-        return  "\n********** LATEST ELECTION RESULTS **********\n"
-                +"\nELECTORAL COLLEGE: \nRepublican\tDemocrat:\n"
+        return  "\n********** " + name + " **********\n"
+                + "\nLATEST ELECTION RESULTS:\n"
+                + "\nELECTORAL COLLEGE - "
                 + ECReportStrategy.report()
-                + "\nPOPULAR VOTE: \nRepublican\tDemocrat:\n"
+                + "\n\nPOPULAR VOTE - "
                 + PVReportStrategy.report();
     }
 
-    public void DisplayLegalMessage() {
-        System.out.println("\n" + formatter.format(new Date()));
-        System.out.println("All reports are purely observational and not legally binding in any way.\n");
+    public void displayLegalMessage() {
+        System.out.println(formatter.format(new Date()));
+        System.out.println("All reports are purely observational and not legally binding in any way.");
     }
 }

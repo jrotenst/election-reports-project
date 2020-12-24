@@ -7,7 +7,9 @@ public class ElectionData extends Observable {
 
     private ArrayList<State> stateResults;
 
-    public ElectionData() { }
+    public ElectionData(ArrayList<State> stateResults) {
+        this.stateResults = stateResults;
+    }
 
     public void resultsChanged() {
         setChanged();

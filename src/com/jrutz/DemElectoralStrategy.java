@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class DemElectoralStrategy implements IElectionReportingStrategy {
 
     private ArrayList<State> results;
-    private State mostElectorals = null;
+    private State mostElectorals;
     private int repElectorals;
     private int demElectorals;
 
@@ -19,6 +19,7 @@ public class DemElectoralStrategy implements IElectionReportingStrategy {
 
     @Override
     public String report() {
+        resetVariables();
         for (State s : results) {
             if (mostElectorals == null ) {
                 mostElectorals = s;
@@ -36,7 +37,7 @@ public class DemElectoralStrategy implements IElectionReportingStrategy {
 
         // award democrats state with most electorals
         demElectorals += mostElectorals.getElectoralVotes();
-        return " ".repeat(15) + repElectorals + "\t" + demElectorals + "\n";
+        return "Republican: " + repElectorals + "\t\t" + "Democrat: "+ demElectorals;
     }
 
     private void awardElectoralsFairly(State s) {
@@ -56,6 +57,12 @@ public class DemElectoralStrategy implements IElectionReportingStrategy {
             return -1;
         }
         return 0;
+    }
+
+    public void resetVariables() {
+        mostElectorals = null;
+        repElectorals = 0;
+        demElectorals = 0;
     }
 
 }

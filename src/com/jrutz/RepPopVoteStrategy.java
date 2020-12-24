@@ -16,10 +16,16 @@ public class RepPopVoteStrategy implements IElectionReportingStrategy {
     }
 
     public String report() {
+        resetVariables();
         for (State s : results) {
             sumRepVotes += s.getRepVotes();
             sumDemVotes += s.getDemVotes() - (s.getDemVotes() * 0.5);
         }
-        return " ".repeat(15) + sumRepVotes + "\t" + sumDemVotes + "\n";
+        return "Republican: " + sumRepVotes + "\t\t" + "Democrat: "+ sumDemVotes;
+    }
+
+    public void resetVariables() {
+        sumRepVotes = 0;
+        sumDemVotes = 0;
     }
 }
